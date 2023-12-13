@@ -1,12 +1,12 @@
 import string
 import random
 
-def encode_fun1(n):
+def encode_func1(n):
     #reversal of string
     ans=n[::-1]
     print(ans)
 
-def encode_fun2(n):
+def encode_func2(n):
     # using random.choices()
     # generating random strings
     random_letters1 = ''.join(random.choices(string.ascii_lowercase+string.digits,k=3))
@@ -15,12 +15,12 @@ def encode_fun2(n):
     ans=str(random_letters1)+n[1:]+n[0]+str(random_letters2)
     print(ans)
 
-def decode_fun1(n):
+def decode_func1(n):
     #reversal of string
     ans=n[::-1]
     print(ans)
 
-def decode_fun2(n):
+def decode_func2(n):
     # removal of random letters
     rem=n[3:(len(n)-3)]
     # putting last words in front after removal
@@ -37,25 +37,25 @@ y=msg.lower()
 list=[]                             # empty list
 list=y.split()                      # each word of message breaks into words
 
-for words in list:                  # taking each word and feeding it into functions
+for words in list:                  
     
     # actions for encoding
     if en_de.lower()=="e":
 
         if len(words)<4:
-            encode_fun1(words)
+            encode_func1(words)
         
         else:
-            encode_fun2(words)
+            encode_func2(words)
 
     # actions for decoding
     elif en_de.lower()=="d":
 
         if len(words)<4:
-            decode_fun1(words)
+            decode_func1(words)
     
         else:
-            decode_fun2(words)
+            decode_func2(words)
     
     else:
         print("INVALID INPUT!!! Try Again")
