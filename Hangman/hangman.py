@@ -1,7 +1,9 @@
 import random
+import pandas as pd
 
 def choose_word():
-    words = ["programming", "hangman", "python", "challenge"]
+    df = pd.read_csv("Hangman\words.csv")
+    words = df["WORDS"].tolist()
     return random.choice(words)
 
 def display_word(word, guessed_letters):
