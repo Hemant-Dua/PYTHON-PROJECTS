@@ -4,7 +4,6 @@ def search(arr,size,x):
             return i
     return -1
 
-
 if __name__ == "__main__":
     arr_size=int(input("Enter the number of elements in array: "))
 
