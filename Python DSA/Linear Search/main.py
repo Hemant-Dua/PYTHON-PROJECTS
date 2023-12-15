@@ -5,17 +5,17 @@ def search(arr,size,x):
     return -1
 
 if __name__ == "__main__":
-    arr_size=int(input("Enter the number of elements in array: "))
+    size = int(input("Enter the number of elements in array: "))
 
-    arr=[]
+    arr = []
     print("Enter the elements of the array: ")
-    for i in range(0,arr_size):
+    for i in range(0,size):
         x=int(input())
         arr.append(x)
 
-    target=int(input("Enter the target: "))
+    target = int(input("Enter the target: "))
 
-    result = search(arr, arr_size, target)
+    result = search(arr, size, target)
     
     if result == -1:
         print("The required number is not in the array.")

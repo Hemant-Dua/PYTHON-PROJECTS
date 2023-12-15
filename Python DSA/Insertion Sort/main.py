@@ -14,7 +14,7 @@ if __name__ == "__main__":
     arr = []
     print("Enter the elements of the array: ")
     for i in range(0,size):
-        x=int(input())
+        x = int(input())
         arr.append(x)
         
     print(f"The Given array is: {arr}")

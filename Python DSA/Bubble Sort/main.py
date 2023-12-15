@@ -1,5 +1,5 @@
 def bubblesort(arr,size):
-    passes=0
+    passes = 0
     while (passes != size):
         for i in range(0,size):
             if arr[i] > arr[i+1]:
@@ -15,9 +15,9 @@ if __name__ == "__main__":
     arr = []
     print("Enter the elements of the array: ")
     for i in range(0,size):
-        x=int(input())
+        x = int(input())
         arr.append(x)
     
     print(f"The Given array is: {arr}")
-    arr = bubblesort(arr, size-1)
+    arr = bubblesort(arr,size-1)
     print(f"The Sorted array will be: {arr}")
