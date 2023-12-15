@@ -1,3 +1,0 @@
-Bruh it's a QR Code Generator...
-
-<h2>What Do u even expected...????
