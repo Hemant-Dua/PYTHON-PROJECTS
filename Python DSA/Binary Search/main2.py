@@ -1,3 +1,5 @@
+#Binary search by the recursive function approach
+
 def search(arr, l, r, target):
     while l <= r:
         mid = (l + r) // 2
@@ -6,9 +8,10 @@ def search(arr, l, r, target):
             return mid
         elif arr[mid] < target:
             l = mid+1
+            search(arr, l, r, target)
         else:
             r = mid-1
-    
+            search(arr, l, r, target)
     return -1
 
 if __name__ == "__main__":
