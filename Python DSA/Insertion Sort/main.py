@@ -1,12 +1,11 @@
-def bubblesort(arr,size):
-    passes=0
-    while (passes != size):
-        for i in range(0,size):
-            if arr[i] > arr[i+1]:
-                temp = arr[i]
-                arr[i] = arr[i+1]
-                arr[i+1] = temp
-        passes+=1
+def insertionsort(arr, size):
+    for i in range(1,size):
+        temp = arr[i]
+        j = i-1
+        while j>=0 and arr[j]>temp:
+            arr[j+1] = arr[j]
+            j-=1
+        arr[j+1] = temp
     return arr
 
 if __name__ == "__main__":
@@ -17,7 +16,7 @@ if __name__ == "__main__":
     for i in range(0,size):
         x=int(input())
         arr.append(x)
-    
+        
     print(f"The Given array is: {arr}")
-    arr = bubblesort(arr, size-1)
+    arr = insertionsort(arr, size)
     print(f"The Sorted array will be: {arr}")
