@@ -30,33 +30,36 @@ def checkwin(X,O):
 
     return -1
 
-if __name__ == "__main__":
+def main():
+    if __name__ == "__main__":
 
-    print("------------------TIC TAC TOE.EXE--------------------")
+        print("------------------TIC TAC TOE.EXE--------------------")
 
-    X=[0,0,0,0,0,0,0,0,0]
-    O=[0,0,0,0,0,0,0,0,0]
+        X=[0,0,0,0,0,0,0,0,0]
+        O=[0,0,0,0,0,0,0,0,0]
 
-    # 1 for X and 0 for O
-    turn=1
+        # 1 for X and 0 for O
+        turn=1
 
-    while True:
-        
-        printboard(X,O)
-
-        if (turn == 1):    
-            print("X's Turn")
-            value=int(input("Please Enter a value..."))
-            X[value]=1
-            turn=0
+        while True:
             
-        else:
-            print("O's Turn")
-            value=int(input("Please Enter a value..."))
-            O[value]=1
-            turn=1
-        
-        check = checkwin(X,O)
-        if check !=-1:
-            print("Match Over...")
-            break
+            printboard(X,O)
+
+            if (turn == 1):    
+                print("X's Turn")
+                value=int(input("Please Enter a value..."))
+                X[value]=1
+                turn=0
+                
+            else:
+                print("O's Turn")
+                value=int(input("Please Enter a value..."))
+                O[value]=1
+                turn=1
+            
+            check = checkwin(X,O)
+            if check !=-1:
+                print("Match Over...")
+                break
+    
+main()
