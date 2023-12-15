@@ -93,7 +93,7 @@ def y_n4(x):
         a=input()
         y_n4(a)
 
-print("----------------------GUESSING GAME.EXE---------------------")
+print("----------------------GUESSING WORD GAME.EXE---------------------")
 print("Hello, User...")
 wait(2)
 print("This Game is not one of those boring games of guessing...Its a little Special...")
@@ -101,7 +101,7 @@ wait(3)
 print("So, You can forget about the boredom and can proceed and have a great time playing it...")
 wait(3)
 
-for i in range(10):
+for i in range(5):
         guess=input("Enter your guess :")
 
 print("Opps!!! I forgot to select a word...")

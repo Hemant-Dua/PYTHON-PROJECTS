@@ -12,7 +12,7 @@ def fib_series (n):
         return (fib_series(n-1))+(fib_series(n-2))
 
 # taking number from user
-num=int(input("Enter number:"))
+num=int(input("Enter number: "))
 
 # if number is negative then error is generated
 if (num<0):

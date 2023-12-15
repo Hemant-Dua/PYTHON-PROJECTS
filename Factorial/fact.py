@@ -8,7 +8,7 @@ def factorial(n):
         return 1
 
 # taking number from user
-num=int(input("Enter the number :"))
+num=int(input("Enter the number: "))
 
 # if number is negative then error is generated
 if (num<0):
