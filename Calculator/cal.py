@@ -1,25 +1,18 @@
-num1=int(input("Enter the First Number: "))
-num2=int(input("Enter the Second Number: "))
+ques = input("Enter the Equation: ")
 
-print("Enter an operation: ")
-print("+ for Addition")
-print("- for Subtraction")
-print("* for Multiplication")
-print("/ for Division")
+splited_ques = ques.split()
 
-opr = input()
+num1 = int(splited_ques[0])
+num2 = int(splited_ques[2])
+opr = splited_ques[1]
 
 if opr=="+":
     print(f"{num1} + {num2} = {num1+num2}")
-    
 elif opr=="-":
     print(f"{num1} - {num2} = {num1-num2}")
-
 elif opr=="*":
     print(f"{num1} * {num2} = {num1*num2}")
-
 elif opr=="/":
     print(f"{num1} / {num2} = {num1/num2}")
-
 else:
-    print("Try Again...")
+    raise ValueError("Invalid Inputs!!!")
